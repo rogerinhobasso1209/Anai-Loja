@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anai Beachwear | Coleção Exclusiva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left"></div>
+
+            <div class="logo-container">
+                <h1 class="text-logo">ANAÏ BEACHWEAR</h1>
+            </div>
+
+            <div class="header-right">
+                <a href="https://wa.me/5511961547785" target="_blank" class="social-btn whatsapp-highlight">
+                    WHATSAPP
+                </a>
+                <a href="https://www.instagram.com/anai.beachwear/" target="_blank" class="social-btn">
+                    INSTAGRAM
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="imagens/E-COMMERCE/IMAGEM FUNDO.jpg" alt="Banner Anai Beachwear" class="hero-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">VERÃO 2025</h2>
+            <p class="hero-subtitle">Elegância e conforto para seus dias de sol</p>
+            <button onclick="document.querySelector('.filter-menu').scrollIntoView({behavior: 'smooth'})" class="hero-btn">Ver Coleção</button>
+        </div>
+    </section>
+
+    <div class="filter-menu">
+        <button onclick="renderizar('todos')" class="filter-btn active">Ver Todos</button>
+        <button onclick="renderizar('preto')" class="filter-btn">Preto</button>
+        <button onclick="renderizar('azul')" class="filter-btn">Azul</button>
+        <button onclick="renderizar('verde')" class="filter-btn">Verde</button>
+        <button onclick="renderizar('rosa')" class="filter-btn">Rosa & Vermelho</button>
+        <button onclick="renderizar('estampado')" class="filter-btn">Estampados</button>
+        <button onclick="renderizar('branco')" class="filter-btn">Claros & Neutros</button>
+    </div>
+
+    <main class="container">
+        <div id="grid-produtos" class="grid-produtos">
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 ANAÏ BEACHWEAR</p>
+            <div class="footer-links">
+                <a href="https://wa.me/5511961547785" target="_blank" class="footer-link">Atendimento via WhatsApp</a>
+                <span class="separator">|</span>
+                <a href="https://www.instagram.com/anai.beachwear/" target="_blank" class="footer-link">Siga-nos no Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
