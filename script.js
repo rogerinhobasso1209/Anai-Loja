@@ -1,4 +1,4 @@
-const BASE_PATH = '';
+const BASE_PATH = 'imagens/E-COMMERCE/';
 
 // 1. MAPEAMENTO COMPLETO DAS FOTOS
 const imageMap = {
@@ -177,4 +177,3 @@ function renderizar(filtro = 'todos') {
 }
 
 document.addEventListener('DOMContentLoaded', () => renderizar('todos'));
-
